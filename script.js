@@ -101,4 +101,7 @@ function cal() {
 
     element.style.display = 'block';
     scrollToElement(element);
+    if(itemCount[1]== 1 && itemCount[2]== 1 && itemCount[3]== 4 && itemCount[4]== 5 && itemCount[5]== 1 && itemCount[6]== 4 && itemCount[7]== 1 && itemCount[8]== 9 && itemCount[9]== 1 && itemCount[10]== 9){
+        alert('真面目に入力して下さいね');
+    }
 }
