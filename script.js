@@ -1,4 +1,18 @@
+// ブラウザがMicrosoft Edgeかどうかを判別
+const isMicrosoftEdge = /Edge\/\d+/.test(navigator.userAgent);
 
+if (isMicrosoftEdge) {
+  // Microsoft Edgeである場合の処理
+  const glElement = document.getElementById("GL");
+  if (glElement) {
+    glElement.remove(); // IDが「GL」の要素を削除
+  }
+
+  const helloElements = document.querySelectorAll(".hello");
+  helloElements.forEach(element => {
+    element.remove(); // クラスが「hello」の要素を削除
+  });
+}
 
 function scrollToElement(element){
     window.scrollTo({

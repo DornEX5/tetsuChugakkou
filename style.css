@@ -35,7 +35,7 @@ section{
 }
 
 #GL:hover + .hello {
-    display: block; /* IDがGLの要素をホバーした時に、隣接するhelloクラスを持つ要素を表示する */
+    display: block;
 }
 
 .name{
