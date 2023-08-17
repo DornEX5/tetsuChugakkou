@@ -1,0 +1,156 @@
+section{
+    display: block;
+    width: 300px;
+    margin: 30px auto;
+    background-color: white;
+}
+
+@media (min-width:768px){
+    section{
+        width: 1000px;
+        margin: 30px auto;
+    }
+}
+
+.name{
+    margin-top: 100px;
+}
+.nameContents{
+    display: flex;
+    width: 80%;
+    transform: translate(18%);
+}
+
+.nameContents input{
+    height: 30px;
+}
+
+.header{
+    z-index: 10;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    color: black;
+    background: linear-gradient(to bottom, skyblue, rgb(31, 173, 230));
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+table{
+    background-color: rgb(243, 243, 243);
+}
+
+td{
+    border: solid black;
+    width: 100px;
+    height: 50px;
+    font-size: 8pt;
+}
+@media (min-width:768px){
+    td{
+        border: solid black;
+        width: 400px;
+        font-size: 14pt;
+    }
+}
+
+.titleLine{
+    text-align: center;
+}
+
+input{
+    width: 80%;
+    transform: translate(7%,-0%);
+}
+
+h2{
+    text-align: center;
+    background-color: skyblue;
+    padding: 0 10px;
+    border-radius: 50px;
+    border:solid 2px black;
+    margin-bottom: 20px;
+}
+
+@media (min-width:768px){
+    h2{
+        margin: 40px 400px;
+    }
+}
+
+h2:hover{
+    transform: scale(1.05);
+}
+
+.back{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    background-color: rgb(234, 234, 234);
+    display: none;
+}
+
+.back .point{
+    padding-top: 30px;
+    font-size: 20pt;
+    text-align: center;
+}
+
+.back .line{
+    display: flex;
+    justify-content: center;
+}
+
+.back .line h3{
+    font-size: 20pt;
+    margin: 0;
+}
+
+.back .line p{
+    font-size: 10pt;
+    margin-left: 4pt;
+}
+
+.back .sumName{
+    position: absolute;
+    top: -25%;
+    left: 0%;
+    font-size: 20pt;
+    font-style: italic;
+}
+
+.reason{
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%,0);
+    color: red;
+    display: none;
+}
+.YouTubeLine img{
+    width: 100%;
+}
+@media (min-width:768px){
+    .YouTubeLine {
+        width: 100%;
+        display: flex;
+    }
+    .YouTubeLine img{
+        width: 98%;
+        justify-content: space-between;
+    }
+    .YouTubeLine img:hover{
+        transform: scale(1.02);
+        border: solid 2px rgb(255, 0, 0);
+    }
+}
+footer{
+    text-align: center;
+    background: linear-gradient(to bottom,rgb(31, 173, 230), skyblue);
+    padding: 10px 0;
+}
+
+*{
+    margin: 0 0;
+}
