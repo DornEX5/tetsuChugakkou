@@ -12,6 +12,32 @@ section{
     }
 }
 
+#GL{
+    display: none;
+}
+@media (min-width:768px){
+    #GL{
+        display:block;
+        position: absolute;
+        z-index: 10;
+        bottom: 0;
+        width: 10%;
+        right: 0;
+    }
+}
+
+.hello{
+    position: absolute;
+    bottom: 200px;
+    right: 10px;
+    z-index: 12;
+    display: none;
+}
+
+#GL:hover + .hello {
+    display: block; /* IDがGLの要素をホバーした時に、隣接するhelloクラスを持つ要素を表示する */
+}
+
 .name{
     margin-top: 100px;
 }
@@ -35,6 +61,7 @@ section{
     padding: 0;
     margin: 0;
     text-align: center;
+    padding: 15px 0;
 }
 
 table{
@@ -164,4 +191,5 @@ footer{
 
 *{
     margin: 0 0;
+    position: relative;
 }
