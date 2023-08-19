@@ -89,6 +89,7 @@ td{
 input{
     width: 80%;
     transform: translate(7%,-0%);
+    text-align: right;
 }
 .sum1, .sum2, .sum3, .sum4, .sum5, .sum6, .sum7, .sum8, .sum9, .sum10{
     text-align: right;
